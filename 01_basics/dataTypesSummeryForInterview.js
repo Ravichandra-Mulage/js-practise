@@ -25,7 +25,6 @@ let userEmail; // undefined
 3. Functions
 
 
-
 */
 
 // const heros = ["shaktiman", "naagraaj", "doga"]; // Array 
@@ -102,4 +101,45 @@ Its instructions are written in a binary form containing only 0s and 1s.
 The CPU directly executes machine code
 
 */
+
+// ****************************************************************************************************************************************
+
+/* Memory Management in JavaScript 
+
+Stack(Primitive Datatype) and Heap(Non-Primitive Datatypes) 
+
+when we use primitives in stack mermory, we get copy of that variable.
+    example:
+    let myYoutubeName= "ravichandramulagedotcom" // it will go into stack memory.
+    let anotherName = myYoutubeName;
+    anotherName = "Annagamingdotcom";
+
+    console.log(myYoutubeName);
+    console.log(anotherName);
+    [to better understand the concept, run these lines of code.]
+
+when we use non-primitives in heap memory, we get reference of original value. so whatever changes we made into reference it will be reflected into original value.
+example:
+
+let myObj={
+            name: "Ravichandra",
+            age: 21,
+            city: "solapur"
+}
+
+myObj.age = 22;
+myObj.city ="pune"
+
+console.log(myObj);
+ [to better understand the concept, run these lines of code.]
+
+(Here you can see, when we make change into the object values, the original values of the objects gets changed, 
+by this we can understand, it gives the reference ot the original values.)
+
+*/
+
+
+
+
+
      
