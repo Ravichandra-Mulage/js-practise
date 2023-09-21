@@ -31,11 +31,11 @@ function loginUserMessage(username = "sam"){
 
 // console.log(loginUserMessage("Ravichandra"));
 
-function calculateCarPrice(val1, val2, ...num1){ // ... rest operator (also spread opertor)
+function calculateCarPrice(val1, val2, ...num1) { // ... rest operator (also spread opertor) var1 and val2 holds the first two values and the rest will get printed.
     return num1
 }
 
-console.log(calculateCarPrice(200, 400, 500));
+console.log(calculateCarPrice(200, 400, 500, 100, 600));
 
 const user = {
     username: "Ravichandra",
@@ -55,9 +55,8 @@ handleObject({
 
 const myNewArray = [200, 300 , 100, 500]
 
-function returnSecondValue(getArray){
+function returnSecondValue(getArray){ // how to access an array element using a function.
     return getArray[2];
 }
 
-console.log(returnSecondValue(myNewArray))
 console.log(returnSecondValue(myNewArray))
