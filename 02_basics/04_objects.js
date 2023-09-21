@@ -73,7 +73,30 @@ const obj3 = {...obj1, ...obj2} // this is easy way to combine two objects into 
 
 // console.log(Object.entries(tinderUser)); // used to get only 'values' of the object. // imp // keep in mind. 
 
-console.log(tinderUser.hasOwnProperty("isLogged")); // To check whether a property exist in object or not.
+// console.log(tinderUser.hasOwnProperty("isLogged")); // To check whether a property exist in object or not.
+
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseInstructor: "hitesh"
+}
+
+// course.courseInstructor
+
+const {courseInstructor : instructor} = course // another way of accessing properties of objects.
+
+console.log(instructor); // de-structure of objects.
+
+// {
+//     "name":"hitesh",
+//     "coursename":"js in hindi", 
+//     "price":"free"
+// }
+
+
+
+
+
 
  
 
