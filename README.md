@@ -1,2 +1,2 @@
 # js-practise
-A code repo for javascript practise.
+A code repository for javascript practice.
