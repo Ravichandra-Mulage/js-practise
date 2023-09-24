@@ -1,0 +1,78 @@
+JavaScript Execution context
+
+Whenever executing a program JS always creates "Global Execution context" it refers to the variable this.
+
+There are mainly 2 execution context
+1. Global execution context
+2. Function execution context
+
+JS always runs a program in two phase
+1. Memory creation phase- In this phase only memory is allocated to all the variables and functions.
+2. Execution phase
+
+/*
+Let's understand this with an example
+
+let val1 = 10;
+let val2 = 5;
+function addnum(num1, num2){
+    let total = num1 + num2
+    return total
+}
+
+let result1 = addnum(num1, num2)
+let result2 = addnum(10, 2)
+
+
+1st - 'Global Execution context'.. refer to this variable.
+
+  a) Memory creation phase - 
+        val1 - undefined
+        val2 - undefined
+        addnum -  function definition
+        result1 - undefined
+        result2 - undefined
+
+ b) Execution Phase -
+        val1 - 10
+        val2 - 5
+        addnum - another new variable environment + execution thread gets created
+        result1 - 15
+        addnum - another new variable environment + execution thread gets created
+        result2 - 12
+
+    here addnum creates new variable environment + execution thread
+    once again
+                a) Memory creation phase - 
+                val1 - undefined
+                val2 - undefined
+                total - undefined
+                b) Execution Phase -
+                num1 - 10
+                num2 - 5
+                total -15
+                for addnum function
+                then total will be returned to the global execution context
+                (once its job gets done, it automatically delets itself.)
+
+
+here addnum creates new variable environment + execution thread
+    one more time
+                a) Memory creation phase - 
+                val1 - undefined
+                val2 - undefined
+                total - undefined
+                b) Execution Phase -
+                num1 - 10
+                num2 - 2
+                total -12
+                for addnum function
+                then total will be returned to the global execution context
+                (once its job gets done, it automatically delets itself.)
+
+*/
+
+// Call Stack
+
+
+GEC
