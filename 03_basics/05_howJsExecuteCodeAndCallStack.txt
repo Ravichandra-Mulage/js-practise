@@ -74,5 +74,14 @@ here addnum creates new variable environment + execution thread
 
 // Call Stack
 
+// IMP NOTES //
 
-GEC
+Call stack is like container (stack data structure.)
+
+First at the bottom of stack lies Global execution context.
+
+A call stack is a data structure that uses the Last In, First Out (LIFO) principle to temporarily store and manage function invocation (call). 
+
+It is used by the JavaScript engine to keep track of the current function call and its nested functions.
+
+When a function is called, it is pushed onto the call stack. When a function returns, it is popped off the call stack. The call stack is used to determine the order in which functions are executed.
